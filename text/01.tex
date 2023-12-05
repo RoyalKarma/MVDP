@@ -1,7 +1,97 @@
 \section{část 1}
 \subsection{\textcolor{red}{Komunikační řetězec, vrstvový model datového přenosu, základní operace při zpracování signálu u digitálního komunikačního systému.}}
+\subsubsection*{Komunikační řetězec}
+\begin{itemize}
+    \item Zdroj zprávy
+    \item Kodovací zařízení/vysílač signálu
+    \item  přenosová cesta
+    \item  Dekodovací zařízení/přijímač signálu
+    \item příjemce zprávy
+\end{itemize}
+\subsubsection*{Vrstvový model datového přenosu}
+\textbf{RM-OSI}
+\begin{itemize}
+    \item \textbf{Aplikační vrstva} - Komunikace aplikačních procesů, funkce vrstvy může provádět uživatel, cílem je plnění požadavků uživatele
+    \item \textbf{Prezentační vrstvy} - přizpůsobeních datových formátu pro prvky sítě, nezávisle na významu zprávy
+    \item \textbf{Relační vrstva} - organizuje a synchoronizuje dialog mezi účastníky komunikace
+    \item \textbf{Transportní vrstva} - řídí datové toky, segmentuje data
+    \item \textbf{Síťová vrstva} - vytváří pakety, které směruje do určeného místa
+    \item \textbf{Spojová vrstva} - Řídí komunikace po okruzích, odpovědná za zabezpečení přenosu dat
+    \item \textbf{Fyzická vrstva} - vytváří a ruší fyzická spojení pro bitové toky
+\end{itemize}
+
+\subsubsection*{Základní operace při zpracování signálu u dig. komunikačního systému}
+
+\begin{itemize}
+    \item Format - digitalizace signálu
+    \item Sourceen code- zdrojové kódování
+    \item Encrypt
+    \item Channel Encode
+    \item Multiplex
+    \item Pulse modulace - tvarování pulzů
+    \item Bandpass modulace - modulace
+    \item Frequency spread - kmitočtové rozprostření
+    \item Multiplce access- mnohonásobný přístup
+    \item XMT -vysílač
+    \item Synchronizace
+    \item RCV-přijímač
+    \item Demodulace a vzorkování
+    \item Detect - vyhodnocené symbolů
+    
+\end{itemize}
+
+
 \subsection{\textcolor{red}{Úrovně signálu a vztažné hodnoty, absolutní a relativní úroveň, útlum, zisk, odstup signálu od šumu, výkonová spektrální hustota, přenosová kapacita kanálu.}}
+\begin{itemize}
+    \item \textbf{Absolutní úroveň} - srovnání veličiny ve sledovaném místě vzhledem k normálové hodnotě této veličiny (např. 1 mW)
+    \item \textbf{Relativní} -srovnávání úrovně v určitém místě s úrovní ve vztažném místě
+    \item \textbf{Útlum}- \textbf{A} - attenuation - \textbf{?} $S=-A$
+    \item \textbf{Zisk}- G nebo S - gain $S=-A$
+    \item \textbf{SNR}- signal to noise ration $SNR=\frac{S}{N}$
+    \item \textbf{Výkonová spektrální hustota} - \textbf{PSD} - udává rozložení výkonu při přenosu signálu s náhodným charakterem 
+    $PSD=\frac{P}{B}$
+    \item \textbf{Přenosová kapacita kanálu} - C - množství informace, které lze přenést signálem o šířce pásma B, přijímaném výkonu S a šumu o výkonu N za jednotku času
+    $$C=Blog_2(1+\frac{S}{N})$$
+\end{itemize}
+
 \subsection{Telekomunikační síť, struktura, způsoby komunikace, přenosové prostředky}
+\begin{itemize}
+    \item \textbf{Struktura} - určuje způsob komunikace, definuje protokoly a vrstvy
+    \item \textbf{Způsoby komunikace}
+    \item \textbf{Přenosové prostředky} \begin{itemize}
+        \item Metalická vedení
+        \item  Optická přenosová prostředí
+        \item Radiové přenosová prostředí
+    \end{itemize}
+\end{itemize}
+
+
 \subsection{\textcolor{red}{Metalická vedení, náhradní schéma homogenního vedení, primární parametry, sekundární parametry jednotky a vzájemné vztahy.}}
+\begin{itemize}
+    \item \textbf{Metalická vedení} - vedení tvořeno nejčasteji dvojicí souběžných metalických vodičů - dvě možné uspořádání:\begin{itemize}
+        \item \textbf{Symetrické} - dvojice stočených vodičů v kabelu
+        \item  \textbf{Koaxiální} - dvojice souosých vodičů
+    \end{itemize} 
+    \item Náhradní schéma homogenního vedení
+    \item Promární paramtery
+    \begin{itemize}
+        \item \textbf{R} - odpor
+        \item \textbf{L} - indukčnost
+        \item  \textbf{G} - svod
+        \item \textbf{C} - kapacita
+        \item  pro dané vedení jsou konstatní
+    \end{itemize}
+    \item Sekundární parametry
+    \begin{itemize}
+        \item Nutné k sledování přenosových parametrů homogenního vedení
+        \item \textbf{Měrný činitel přenosu} - $\gamma=\frac{\Delta U}{U*\Delta I}$
+        \item \textbf{Charakteristická impedance} - $Z_c=\frac{U}{I}$
+        \item  \TODO{jednotky}
+    \end{itemize}
+\end{itemize}
+
+
 \subsection{\textcolor{red}{Konstrukce symetrických kabelových vedení používaných v přístupové síti, DM a x čtyřky.}}
+
+
 \subsection{Modely elektrických parametrů kabelových vedení určené pro simulaci xDSL. (přehledově)}
